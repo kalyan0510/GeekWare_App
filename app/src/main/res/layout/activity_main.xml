@@ -9,14 +9,6 @@
     android:orientation="vertical"
     tools:context="com.geekware.geekware.MainActivity">
 
-    <!-- Our screen will be divided vertically in 5x space with 2.5x space
-         then 1x space for the buttons and then 1.5x space -->
-
-    <!-- LinearLayout (blank) to act as placeholder for space -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2.5"></LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

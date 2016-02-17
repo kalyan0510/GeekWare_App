@@ -1,5 +1,6 @@
 package com.geekware.geekware;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -7,6 +8,8 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -18,7 +21,7 @@ import com.parse.ParseUser;
 /**
  * This class has to be edited a lot after gui changes. It is here currently just for reference.
  */
-public class SignUpActivity extends ActionBarActivity {
+public class SignUpActivity extends Activity {
     EditText etId,etPass,etRePass;                      //Make 3 editTexts for this
     Button btnSignUp;
     CheckBox cbTerms;                                   //The checkBox to agree to conditions
@@ -29,6 +32,10 @@ public class SignUpActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setTitle("Sign Up");
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_sign_up);
 
         etId       = (EditText) findViewById(R.id.etUserIdSignUp);

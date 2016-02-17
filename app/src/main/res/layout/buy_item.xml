@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:id="@+id/pic"
+        android:src="@mipmap/ic_launcher"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="7024*****1"
+        android:id="@+id/ct"
+        android:textColor="#000000"
+        android:layout_below="@+id/sf"
+        android:layout_alignLeft="@+id/sf"
+        android:layout_alignStart="@+id/sf"
+        android:layout_marginTop="73dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rs.1000"
+        android:textColor="#000000"
+        android:id="@+id/sf"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="63dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bean Bag"
+        android:id="@+id/name"
+        android:textColor="#000000"
+        android:layout_below="@+id/pic"
+        android:layout_alignRight="@+id/pic"
+        android:layout_alignEnd="@+id/pic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="B tech , II year"
+        android:id="@+id/sellinf"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/sf"
+        android:layout_toRightOf="@+id/ct"
+        android:layout_toEndOf="@+id/ct" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="2 Months"
+        android:id="@+id/used"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/ct"
+        android:layout_alignRight="@+id/sellinf"
+        android:layout_alignEnd="@+id/sellinf" />
+
+
+</RelativeLayout>

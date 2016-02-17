@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.geekware.geekware.LoginActivity">
+    tools:context="com.geekware.geekware.LoginActivity"
+    android:weightSum="1">
 
     <EditText
         android:id="@+id/etUsernameLogin"
@@ -13,7 +14,9 @@
         android:background="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#eeef23" />
+        android:textColor="#eeef23"
+        android:layout_alignRight="@+id/gt"
+        android:layout_alignEnd="@+id/gt" />
 
     <EditText
         android:id="@+id/etPasswordLogin"
@@ -21,12 +24,90 @@
         android:background="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#eeef23" />
+        android:textColor="#eeef23"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/gts"
+        android:layout_toEndOf="@+id/gts" />
 
     <Button
         android:id="@+id/btnLogin"
         android:text="@string/strLogin"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUsernameLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="goto my lects"
+        android:id="@+id/gt"
+        android:layout_above="@+id/gts"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="goto my notes"
+        android:id="@+id/gts"
+        android:layout_above="@+id/buses"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="goto buses"
+        android:id="@+id/buses"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="266dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:background="#dfcdfc"
+        android:layout_below="@+id/buses"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image"
+        android:id="@+id/img"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Image"
+        android:id="@+id/getimg"
+        android:layout_above="@+id/gts"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgid"
+        android:layout_alignBottom="@+id/img"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SnB"
+        android:id="@+id/snb"
+        android:layout_alignTop="@+id/gts"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
